@@ -1,0 +1,68 @@
+body{
+    background-color: white;
+    margin: 10px;
+    text-align: center;
+}
+.box{
+    background-color: white;
+    height: 650px;
+    width: auto;
+    border: 15px solid black;
+    display: grid;
+    grid-template-areas: "ce topo rodape"
+                         "ce cp rodape"
+                         "ce cd rodape";
+
+    grid-template-rows: 100px 1fr 90px;
+    grid-template-columns: 200px 1fr 150px;      
+}
+.topo{
+    background-color: red;
+    grid-area: topo;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.ce{
+    background-color: white;
+    grid-area: ce;
+    display: grid;
+    gap: 10px;
+    grid-template-areas: "cp1"
+    "cp2"
+    "cp3";
+
+grid-template-rows: 200px 200px 200px;
+grid-template-columns: 200px ;
+}
+.cp{
+    background-color: palevioletred;
+    grid-area: cp;
+}
+.cd{
+    background-color: green;
+    grid-area: cd;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+.rodape{
+    background-color: yellow;
+    grid-area: rodape;
+    
+}
+.ce .cp1{
+    background-color: blue;
+    grid-area: cp1;
+}
+.ce .cp2{
+    background-color: blueviolet;
+    grid-area: cp2;
+
+}
+.ce .cp3{
+    background-color: orange;
+    grid-area: cp3;
+}
